@@ -25,7 +25,7 @@
     "sqlite3": "^5.1.7",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://ВАШЕ_ИМЯ_ПОЛЬЗОВАТЕЛЯ.github.io/ВАШ_РЕПОЗИТОРИЙ",
+  "homepage": "https://Timka1510.github.io/vk-clicker-app",
   "scripts": {
     "start": "cross-env PORT=3000 HTTPS=true react-scripts start",
     "build": "react-scripts build",
