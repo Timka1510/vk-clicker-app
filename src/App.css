@@ -1,0 +1,90 @@
+/* Центрирование содержимого в панели клика */
+.clicker-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    color: rgb(202, 202, 202);
+    min-height: calc(100vh - 150px); /* Учитываем высоту панели и Tabbar */
+  }
+  
+  .clicker-cat {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    margin: 15px 0;
+  }
+
+  .upgrades-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Адаптивное количество колонок */
+    gap: 15px;
+  }
+  
+  .upgrade-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 150px 0px;
+    border-radius: 15px;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+  }
+  
+  /* Псевдоэлемент для затемнения только фона */
+  .upgrade-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    border-radius: 10px;
+  }
+.upgrade-text, .button {
+    position: relative;
+    z-index: 2;
+  }
+
+  .upgrades-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    width: 98%;
+  }
+
+  /* Основные стили кнопок */
+.button {
+    background-color: #a5a5a5; /* Цвет фона кнопки */
+    color: rgb(0, 0, 0);              /* Цвет текста */
+    border: none;              /* Убираем стандартную рамку */
+    border-radius: 8px;       /* Закругленные углы */
+    padding: 12px 24px;       /* Внутренние отступы */
+    font-size: 16px;          /* Размер шрифта */
+    cursor: pointer;           /* Курсор при наведении */
+    transition: background-color 0.3s, transform 0.2s; /* Плавные переходы */
+    display: inline-flex;      /* Удобно для выравнивания */
+    align-items: center;       /* Вертикальное выравнивание */
+  }
+  
+  /* Эффект наведения */
+  .button:hover {
+    background-color: #6e6e6e; /* Темнее при наведении */
+    transform: scale(1.05);    /* Легкое увеличение */
+  }
+  
+  /* Эффект нажатия */
+  .button:active {
+    transform: scale(0.9); /* Легкое уменьшение при нажатии */
+  }
+  
+  

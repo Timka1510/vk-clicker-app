@@ -1,0 +1,60 @@
+{
+  "name": "vk-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@vkontakte/icons": "^2.151.0",
+    "@vkontakte/vk-bridge": "^2.15.2",
+    "@vkontakte/vk-miniapps-deploy": "^0.1.8",
+    "@vkontakte/vk-tunnel": "^0.2.2",
+    "@vkontakte/vkui": "^6.7.3",
+    "body-parser": "^1.20.3",
+    "cross-env": "^7.0.3",
+    "express": "^4.21.1",
+    "git": "^0.1.5",
+    "https": "^1.0.0",
+    "https-proxy-agent": "^7.0.5",
+    "pg": "^8.13.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "5.0.1",
+    "sqlite3": "^5.1.7",
+    "web-vitals": "^2.1.4"
+  },
+  "homepage": "https://ВАШЕ_ИМЯ_ПОЛЬЗОВАТЕЛЯ.github.io/ВАШ_РЕПОЗИТОРИЙ",
+  "scripts": {
+    "start": "cross-env PORT=3000 HTTPS=true react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "tunnel": "vk-tunnel --insecure=0 --http-protocol=https --ws-protocol=wss --host=localhost --port=3000 --timeout=5000",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "dev": "vite"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
+  }
+}
