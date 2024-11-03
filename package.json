@@ -26,15 +26,16 @@
     "web-vitals": "^2.1.4"
   },
   "homepage": "https://Timka1510.github.io/vk-clicker-app",
+  "type": "module",
   "scripts": {
     "start": "cross-env PORT=3000 HTTPS=true react-scripts start",
-    "build": "react-scripts build",
+    "dev": "vite",
+    "build": "vite build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "tunnel": "vk-tunnel --insecure=0 --http-protocol=https --ws-protocol=wss --host=localhost --port=3000 --timeout=5000",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "dev": "vite"
+    "deploy": "gh-pages -d dist"
   },
   "eslintConfig": {
     "extends": [
@@ -55,6 +56,8 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.2.0"
+    "@vitejs/plugin-react": "^4.3.3",
+    "gh-pages": "^6.2.0",
+    "vite": "^5.4.10"
   }
 }
