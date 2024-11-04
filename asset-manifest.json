@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/vk-clicker-app/static/css/main.dcc41440.css",
+    "main.js": "/vk-clicker-app/static/js/main.0cf29fe8.js",
+    "index.html": "/vk-clicker-app/index.html",
+    "main.dcc41440.css.map": "/vk-clicker-app/static/css/main.dcc41440.css.map",
+    "main.0cf29fe8.js.map": "/vk-clicker-app/static/js/main.0cf29fe8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dcc41440.css",
+    "static/js/main.0cf29fe8.js"
+  ]
+}
